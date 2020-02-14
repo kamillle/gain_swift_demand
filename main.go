@@ -12,7 +12,7 @@ const loginUrl = "https://www.swiftdemand.com/users/sign_in"
 func main() {
 	driver := agouti.ChromeDriver(
 		agouti.ChromeOptions("args", []string{
-			// "--headless",
+			"--headless",
 			"--disable-gpu",
 			"--no-sandbox",
 		},
