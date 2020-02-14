@@ -44,4 +44,11 @@ func main() {
 	if err != nil {
 		log.Printf("Failed to login: %v", err)
 	}
+
+	err = page.FindByButton("Claim").Click()
+	if err != nil {
+		log.Printf("Failed to Submit: %v", err)
+	}
+
+	driver.Stop()
 }
